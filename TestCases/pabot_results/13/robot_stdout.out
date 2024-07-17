@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test blankAmountQRcode :: This checks the Receive QR code fubctio...
+==============================================================================
+Validate Receive QR code with blank amount                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankAmountQRcode.robot:17
+    T:  Validate Receive QR code with blank amount    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankAmountQRcode.robot:20
+      Validate the Receive QR code functionality with empty amount    blank_amount=    description=Payment through QR code
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankAmountQRcode.robot:26
+      Click the Banking Option    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\HomeResource.robot:45
+      Wait Until Element Is Visible    ${Banking}
+      |  ${Banking} = xpath://div[text()='Banking'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://div[text()='Banking']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.test blankAmountQRcode :: This checks the Receive QR cod... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\13\output.xml

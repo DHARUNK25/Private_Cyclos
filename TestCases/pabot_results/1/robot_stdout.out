@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Pay User Invalid :: To validate Banking - payment to user Fu...
+==============================================================================
+To validate payment                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_pay_user_invalid.robot:17
+    T:  To validate payment    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_pay_user_invalid.robot:21
+      To validate payment to user functionality with invalid amount    user_name=Dinesh dk    exceeded_amount_data=501
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_pay_user_invalid.robot:37
+      verify exceeded amount is entered    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\PaymentUser.robot:83
+      Wait Until Element Is Visible    ${invalid_amount_error_msg}
+      |  ${invalid_amount_error_msg} = xpath://div[@class='invalid-feedback'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://div[@class='invalid-feedback']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.Test Pay User Invalid :: To validate Banking - payment t... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\1\output.xml

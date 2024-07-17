@@ -1,0 +1,44 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Myadvertisement :: Test to Login Page                          
+==============================================================================
+add new advertisement                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_myadvertisement.robot:13
+    T:  add new advertisement    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_myadvertisement.robot:20
+      add new advertisements    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\MyAdvertisement.robot:25
+      Wait Until Element Is Visible    ${add_new}
+      |  ${add_new} = xpath://div[text()="Add new"] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://div[text()="Add new"]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+search advertisement                                                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_myadvertisement.robot:24
+    T:  search advertisement    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_myadvertisement.robot:26
+      Go to Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\HomeResource.robot:31
+      Click Element    ${login_btn}
+      |  ${login_btn} = xpath:(//div[@class="ml-2"])[3] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.
+------------------------------------------------------------------------------
+TestCases.Test Myadvertisement :: Test to Login Page                  | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestCases                                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\8\output.xml

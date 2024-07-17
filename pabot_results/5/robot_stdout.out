@@ -1,0 +1,37 @@
+==============================================================================
+PilotProject Cyclos Team1-1                                                   
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                         
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases.test blankAmountQRcode :: This checks...
+==============================================================================
+Validate Receive QR code with blank amount                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankAmountQRcode.robot:16
+    T:  Validate Receive QR code with blank amount    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankAmountQRcode.robot:19
+      Validate the Receive QR code functionality with empty amount    blank_amount=    description=Payment through QR code
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankAmountQRcode.robot:23
+      Fill the login form    sandhiyas    Sand@123
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\Resources\LoginResource.robot:18
+      Input Text    ${username}    ${user}
+      |  ${username} = css:input[placeholder="User"] (str)
+      |  ${user} = sandhiyas (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'css:input[placeholder="User"]' not found.
+------------------------------------------------------------------------------
+PilotProject Cyclos Team1-1.TestCases.test blankAmountQRcode :: Th... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\PilotProject_Cyclos_Team1-1\pabot_results\5\output.xml

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T11:34:25.063689" rpa="false" schemaversion="5">
+<suite id="s1" name="PilotProject Cyclos Team1-1" source="E:\PilotProject_Cyclos_Team1-1">
+<suite id="s1-s1" name="TestCases" source="E:\PilotProject_Cyclos_Team1-1\TestCases">
+<suite id="s1-s1-s1" name="test receiveQRcode" source="E:\PilotProject_Cyclos_Team1-1\TestCases\test_receiveQRcode.robot">
+<test id="s1-s1-s1-t1" name="Validate the Receive QR code functionality with valid data" line="18">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:25.431636" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:34:25.430520" elapsed="2.614097"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:28.046883" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:34:28.045880" elapsed="2.224997"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:34:30.270877" elapsed="0.037071"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:34:30.307948" elapsed="0.002273"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:25.429521" elapsed="4.880700"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:30.312724" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:34:40.609335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:34:40.609335" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:34:30.311720" elapsed="10.300605">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:34:30.310221" elapsed="10.302104">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:34:40.613322" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:34:40.613322" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:40.613322" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:40.613322" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:34:40.614826" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${amount}</arg>
+<arg>${description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:34:40.614826" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the qr code is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:34:40.614826" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:34:40.616221" elapsed="4.451585"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:40.614826" elapsed="4.453483"/>
+</kw>
+<doc>To validate the Receive qr code feature</doc>
+<tag>valid_ReceiveQRCode</tag>
+<status status="FAIL" start="2024-05-28T11:34:25.429521" elapsed="19.638788">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Validate the Receive QR code functionality with empty data" line="30">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:45.070393" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:34:45.070393" elapsed="3.105224"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:48.177120" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:34:48.175617" elapsed="0.925180"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:34:49.100797" elapsed="1.417682"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:34:50.519485" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:45.069328" elapsed="5.452153"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:50.522478" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:35:01.105590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:35:01.105590" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:34:50.521481" elapsed="10.585442">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:34:50.521481" elapsed="10.586443">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:01.107924" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:35:01.107924" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:01.109403" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:01.110402" elapsed="0.000997"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:01.111399" elapsed="0.000503"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${blank_amount}</arg>
+<arg>${blank_description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:01.111902" elapsed="0.000000"/>
+</kw>
+<kw name="verify error message is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:01.111902" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:35:01.112902" elapsed="4.644729"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:35:01.112902" elapsed="4.644729"/>
+</kw>
+<doc>To validate the Receive qr code feature</doc>
+<tag>invalid_ReceiveQRCode</tag>
+<status status="FAIL" start="2024-05-28T11:34:45.068820" elapsed="20.688811">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Validate the Receive QR code functionality with empty amount data" line="42">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:05.761335" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:35:05.760255" elapsed="2.230753"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:07.992222" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:35:07.992222" elapsed="2.242599"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:35:10.234821" elapsed="0.034383"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:35:10.269204" elapsed="0.001020"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:35:05.760255" elapsed="4.509969"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:10.271239" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:35:20.378056" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:35:20.378056" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:35:10.271239" elapsed="10.107814">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:35:10.270224" elapsed="10.109826">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:20.380050" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:35:20.381047" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:20.381047" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:20.381047" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:20.382043" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${blank_amount}</arg>
+<arg>${description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:20.382043" elapsed="0.000000"/>
+</kw>
+<kw name="verify error message is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:20.382043" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:35:20.383058" elapsed="2.200889"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:35:20.383058" elapsed="2.201791"/>
+</kw>
+<doc>To validate the Receive qr code feature</doc>
+<tag>invalid_ReceiveQRCode</tag>
+<status status="FAIL" start="2024-05-28T11:35:05.758870" elapsed="16.825979">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Validate the Receive QR code functionality with blank description" line="54">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:22.587836" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:35:22.587836" elapsed="1.763219"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:24.352224" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:35:24.351055" elapsed="2.555311"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:35:26.907844" elapsed="0.036848"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:35:26.944692" elapsed="0.002511"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:35:22.586838" elapsed="4.360365"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:35:26.948590" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:35:37.157851" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:35:37.157851" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:35:26.948590" elapsed="10.210258">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:35:26.947203" elapsed="10.212642">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:37.159845" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:35:37.159845" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:37.160841" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:35:37.160841" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:37.160841" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${amount}</arg>
+<arg>${blank_description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:35:37.160841" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the qr code is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:35:37.160841" elapsed="0.000997"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:35:37.161838" elapsed="3.795310"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:35:37.161838" elapsed="3.795310"/>
+</kw>
+<doc>To validate the Receive qr code feature</doc>
+<tag>invalid_ReceiveQRCode</tag>
+<status status="FAIL" start="2024-05-28T11:35:22.585844" elapsed="18.371304">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<doc>This checks the Receive QR code fubctionality</doc>
+<status status="FAIL" start="2024-05-28T11:34:25.097244" elapsed="75.861921"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:34:25.096247" elapsed="75.863914"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:34:25.078591" elapsed="75.883559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">invalid_ReceiveQRCode</stat>
+<stat pass="0" fail="1" skip="0">valid_ReceiveQRCode</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="PilotProject Cyclos Team1-1">PilotProject Cyclos Team1-1</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="TestCases">PilotProject Cyclos Team1-1.TestCases</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1-s1" name="test receiveQRcode">PilotProject Cyclos Team1-1.TestCases.test receiveQRcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

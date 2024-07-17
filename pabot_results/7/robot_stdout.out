@@ -1,0 +1,20 @@
+==============================================================================
+PilotProject Cyclos Team1-1                                                   
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                         
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases.test blankDescReceivePay :: This chec...
+==============================================================================
+Validate Receive payment with data                                    | FAIL |
+Test cannot be empty.
+------------------------------------------------------------------------------
+PilotProject Cyclos Team1-1.TestCases.test blankDescReceivePay :: ... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\PilotProject_Cyclos_Team1-1\pabot_results\7\output.xml

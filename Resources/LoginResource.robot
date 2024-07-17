@@ -1,25 +1,30 @@
 *** Settings ***
-Documentation    All the page object and keyword of Loginpage page
+
+Documentation    All the page objects and keywords of Login page
 Library    SeleniumLibrary
 
-
 *** Variables ***
-${login_button}    xpath:(//div[text()=' Login '])[1]
-${username_locator}    css:input[placeholder="User"]
-${password_locator}    css:input[placeholder="Password"]
+${username}    css:input[placeholder="User"]
+${password}    css:input[placeholder="Password"]
 ${submit_btn}    xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]
-${username}    dharun
-${password}    1234
+${forgot_pass}    css:a[class="d-block login-margin-top"]
+${alert}    css:div[class="notification-message"]
+${error}    css:div[class="invalid-feedback"]
 
 *** Keywords ***
 
-Fill the Login page
-    Wait Until Element Is Visible    ${login_button}
-    Click Element    ${login_button}
-    Wait Until Element Is Visible    ${username_locator}
-    Input Text    ${username_locator}    ${username}
-    Wait Until Element Is Visible    ${password_locator}
-    Input Text    ${password_locator}    ${password}
-    Wait Until Element Is Visible    ${submit_btn} 
-    Click Element    ${submit_btn}
-    
+Fill the login form
+    [Arguments]    ${user}    ${pass}
+    Input Text    ${username}    ${user}
+    Input Password    ${password}    ${pass}
+
+click the login button
+    Click Button    ${submit_btn}
+
+check the error message
+    Wait Until Element Is Visible    ${alert}
+    Element Text Should Be    ${alert}    The given name / password are incorrect. Please, try again.
+
+check the empty field alert
+    Element Text Should Be    ${error}    This field is required
+

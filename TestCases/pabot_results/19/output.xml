@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:30:23.462936" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test blankUserReceivePay" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankUserReceivePay.robot">
+<test id="s1-s1-t1" name="Validate Receive payment with empty user data" line="20">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:24.656209" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:30:24.656209" elapsed="2.397342"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:27.057564" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:30:27.053551" elapsed="38.299670"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:05.355498" elapsed="0.135795"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:05.491293" elapsed="0.006907"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:24.654694" elapsed="40.843506"/>
+</kw>
+<kw name="Validate the Receive payment functionality with empty user data">
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:31:10.500851" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:05.499897" elapsed="5.000954"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:10.500851" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<msg time="2024-06-01T21:31:15.832348" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:31:15.832348" level="FAIL">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:31:10.500851" elapsed="5.336254">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:05.499897" elapsed="10.337208">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>demo</arg>
+<arg>1234</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:15.837105" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-06-01T21:31:15.837105" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:15.837105" elapsed="0.002053"/>
+</kw>
+<kw name="Verify the Receive payment page" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-06-01T21:31:15.839158" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the receive payment form with data" owner="ReceivePaymentResouce">
+<arg>${blank_user}</arg>
+<arg>${amount}</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:15.839158" elapsed="0.000000"/>
+</kw>
+<kw name="Click the next button" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-06-01T21:31:15.839158" elapsed="0.000000"/>
+</kw>
+<kw name="verify user error message is displayed" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-06-01T21:31:15.841257" elapsed="0.000000"/>
+</kw>
+<arg>blank_user= </arg>
+<arg>amount=100</arg>
+<tag>invalid_Receive_payment</tag>
+<doc>This checks the Receive payment functionality with empty user data</doc>
+<status status="FAIL" start="2024-06-01T21:31:05.498200" elapsed="10.343057">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:31:15.844304" elapsed="2.238223"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:15.841257" elapsed="2.241270"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-06-01T21:30:24.647509" elapsed="53.435018">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</test>
+<doc>This checks the Receive payment functionality</doc>
+<status status="FAIL" start="2024-06-01T21:30:23.497753" elapsed="54.584774"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:30:23.482480" elapsed="54.600047"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test blankUserReceivePay">TestCases.test blankUserReceivePay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

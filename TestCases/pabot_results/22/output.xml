@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:31:20.802558" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test confirmPasswordRegister" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_confirmPasswordRegister.robot">
+<test id="s1-s1-t1" name="valid register Test case" line="13">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:23.281792" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:31:23.281792" elapsed="2.918512"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:26.200304" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:31:26.200304" elapsed="29.176061"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:55.376365" elapsed="0.114001"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:55.490366" elapsed="0.004564"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:23.276408" elapsed="32.218522"/>
+</kw>
+<kw name="Valid register with all the fields">
+<kw name="Go to Register Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:32:00.499775" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:55.499492" elapsed="5.000283"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:00.499775" level="INFO">Clicking element 'xpath://div[text()=" Register "]'.</msg>
+<msg time="2024-06-01T21:32:05.694051" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:32:05.694051" level="FAIL">Element with locator 'xpath://div[text()=" Register "]' not found.</msg>
+<arg>${register_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:32:00.499775" elapsed="5.200515">Element with locator 'xpath://div[text()=" Register "]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:55.496949" elapsed="10.203341">Element with locator 'xpath://div[text()=" Register "]' not found.</status>
+</kw>
+<kw name="Verify Register Page opens" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.701903" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the Required feilds" owner="RegisterResource">
+<arg>${name}</arg>
+<arg>${login}</arg>
+<arg>${email}</arg>
+<status status="NOT RUN" start="2024-06-01T21:32:05.701903" elapsed="0.001008"/>
+</kw>
+<kw name="Fill the Remaining profile feilds" owner="RegisterResource">
+<arg>${website}</arg>
+<arg>${gender}</arg>
+<arg>${mobile}</arg>
+<arg>${land_line}</arg>
+<status status="NOT RUN" start="2024-06-01T21:32:05.702911" elapsed="0.000527"/>
+</kw>
+<kw name="Enable address fields" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.703438" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the address fields" owner="RegisterResource">
+<arg>${address}</arg>
+<arg>${zip}</arg>
+<arg>${city}</arg>
+<arg>${region}</arg>
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.000000"/>
+</kw>
+<kw name="Click next button" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.000000"/>
+</kw>
+<kw name="fill password fields" owner="RegisterResource">
+<arg>${password}</arg>
+<arg>${confirm_password}</arg>
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.000000"/>
+</kw>
+<kw name="click Registration confirmation checkbox" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.000000"/>
+</kw>
+<kw name="click submit button" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.000000"/>
+</kw>
+<kw name="verification for confirmPassword" owner="RegisterResource">
+<status status="NOT RUN" start="2024-06-01T21:32:05.703957" elapsed="0.001892"/>
+</kw>
+<arg>name=  abc</arg>
+<arg>login=abc12345</arg>
+<arg>email=abc123@gmail.com</arg>
+<arg>website=www.google.com</arg>
+<arg>gender=male</arg>
+<arg>mobile=9856743210</arg>
+<arg>land_line=(201) 555-0123</arg>
+<arg>address=gandhi street</arg>
+<arg>zip=637503</arg>
+<arg>city=salem</arg>
+<arg>region=tamilnadu</arg>
+<arg>password=abc@123</arg>
+<arg>confirm_password=abc@124</arg>
+<status status="FAIL" start="2024-06-01T21:31:55.496949" elapsed="10.208900">Element with locator 'xpath://div[text()=" Register "]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:32:05.705849" elapsed="2.226527"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:05.705849" elapsed="2.226527"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:23.270440" elapsed="44.661936">Element with locator 'xpath://div[text()=" Register "]' not found.</status>
+</test>
+<doc>Test to Register Page</doc>
+<status status="FAIL" start="2024-06-01T21:31:20.858933" elapsed="47.076145"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:31:20.831286" elapsed="47.104840"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test confirmPasswordRegister">TestCases.test confirmPasswordRegister</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,227 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-27T09:41:41.901100" rpa="false" schemaversion="5">
-<suite id="s1" name="test validReceivePay" source="I:\CYCLOS\CYCLOS-PROJECT\PilotProject_Cyclos_Team1\TestCases\test_validReceivePay.robot">
-<test id="s1-t1" name="Validate Receive payment with valid data" line="18">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T17:13:54.934933" rpa="false" schemaversion="5">
+<suite id="s1" name="test blankQRcode" source="F:\Private_repo\PilotProject_Cyclos_Team1\TestCases\test_blankQRcode.robot">
+<test id="s1-t1" name="Validate Receive QR code with valid data" line="17">
 <kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2024-05-27T09:41:53.149943" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<arg>Chrome</arg>
+<msg time="2024-07-16T17:13:57.014943" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2024-05-27T09:41:53.149943" elapsed="12.329580"/>
+<status status="PASS" start="2024-07-16T17:13:57.014943" elapsed="2.906588"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-05-27T09:42:05.479523" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
-<msg time="2024-05-27T09:48:06.900604" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE860D9]
-	(No symbol) [0x00007FF7DDF1AFE9]
-	(No symbol) [0x00007FF7DDEEC21A]
-	(No symbol) [0x00007FF7DDF0BC80]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</msg>
-<msg time="2024-05-27T09:48:06.956666" level="FAIL">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE6D97E]
-	(No symbol) [0x00007FF7DDE85C6F]
-	(No symbol) [0x00007FF7DDE8B67A]
-	(No symbol) [0x00007FF7DDE5F33A]
-	(No symbol) [0x00007FF7DDE859B1]
-	(No symbol) [0x00007FF7DDF0BB5B]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</msg>
+<msg time="2024-07-16T17:13:59.921531" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="FAIL" start="2024-05-27T09:42:05.479523" elapsed="361.639940">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE6D97E]
-	(No symbol) [0x00007FF7DDE85C6F]
-	(No symbol) [0x00007FF7DDE8B67A]
-	(No symbol) [0x00007FF7DDE5F33A]
-	(No symbol) [0x00007FF7DDE859B1]
-	(No symbol) [0x00007FF7DDF0BB5B]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</status>
+<status status="PASS" start="2024-07-16T17:13:59.921531" elapsed="2.221314"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-05-27T09:48:07.119463" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-16T17:14:02.142845" elapsed="0.057271"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" start="2024-05-27T09:48:07.119463" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-16T17:14:02.200116" elapsed="0.023293"/>
 </kw>
-<status status="FAIL" start="2024-05-27T09:41:53.149943" elapsed="373.969520">TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE6D97E]
-	(No symbol) [0x00007FF7DDE85C6F]
-	(No symbol) [0x00007FF7DDE8B67A]
-	(No symbol) [0x00007FF7DDE5F33A]
-	(No symbol) [0x00007FF7DDE859B1]
-	(No symbol) [0x00007FF7DDF0BB5B]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</status>
+<status status="PASS" start="2024-07-16T17:13:57.014943" elapsed="5.208466"/>
+</kw>
+<kw name="Validate the Receive QR code functionality with empty data">
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-16T17:14:07.224041" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-16T17:14:02.223409" elapsed="5.000632"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:07.224041" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:07.224041" elapsed="0.198572"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:02.223409" elapsed="5.199204"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:07.422613" level="INFO">Typing text 'sandhiyas' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:07.422613" elapsed="0.183238"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:07.605851" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-07-16T17:14:07.690913" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:07.605851" elapsed="0.215993"/>
+</kw>
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="PASS" start="2024-07-16T17:14:07.422613" elapsed="0.399231"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:07.821844" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:07.821844" elapsed="0.163407"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:07.821844" elapsed="0.163407"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Banking}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T17:14:07.985251" elapsed="0.726226"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:08.711477" level="INFO">Clicking element 'xpath://div[text()='Banking']'.</msg>
+<arg>${Banking}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:08.711477" elapsed="0.114149"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:07.985251" elapsed="0.840375"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:08.826942" level="INFO">Verifying element 'xpath://div[text()='Banking']' contains exact text 'Banking'.</msg>
+<arg>${Banking_page_verify}</arg>
+<arg>${Banking_page_keyword}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-16T17:14:08.826942" elapsed="0.071098"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:08.826433" elapsed="0.071607"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${receive_qr}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T17:14:08.898040" elapsed="1.479516"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:10.382179" level="INFO">Clicking element 'xpath://div[text()='Receive QR-code']'.</msg>
+<arg>${receive_qr}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:10.382179" elapsed="0.100175"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:10.483504" level="INFO">Verifying element 'xpath://div[text()=' Receive QR-code payment ']' contains exact text 'Receive QR-code payment'.</msg>
+<arg>${Receive_qr_key_xpath}</arg>
+<arg>${receive_qr_keyword}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-07-16T17:14:10.482354" elapsed="0.311488"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:08.898040" elapsed="1.895802"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:10.802258" level="INFO">Typing text '   ' into text field 'css:div[class='input-group'] input'.</msg>
+<arg>${amount_css}</arg>
+<arg>${amount}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:10.800242" elapsed="0.104149"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:10.904391" level="INFO">Typing text '   ' into text field 'css:div[class='label-value-container'] textarea'.</msg>
+<arg>${descript_css}</arg>
+<arg>${description}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:10.904391" elapsed="0.183867"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:11.088258" level="INFO">Clicking button 'xpath://button[@class='btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary']'.</msg>
+<arg>${gen_qr}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-16T17:14:11.088258" elapsed="0.113444"/>
+</kw>
+<arg>${blank_amount}</arg>
+<arg>${blank_description}</arg>
+<status status="PASS" start="2024-07-16T17:14:10.800242" elapsed="0.401460"/>
+</kw>
+<kw name="verify error message is displayed" owner="ReceiveQRcodeResources">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-16T17:14:11.244755" level="INFO">Element 'xpath:(//div[@class='d-flex label-value-value']/field-errors/div)' is displayed.</msg>
+<arg>${error_mess}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-16T17:14:11.204223" elapsed="0.040532"/>
+</kw>
+<status status="PASS" start="2024-07-16T17:14:11.201702" elapsed="0.043053"/>
+</kw>
+<arg>blank_amount=   </arg>
+<arg>blank_description=   </arg>
+<doc>This checks the qr code with blank data</doc>
+<status status="PASS" start="2024-07-16T17:14:02.223409" elapsed="9.021346"/>
 </kw>
 <kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-27T09:48:07.119463" elapsed="10.721482"/>
+<status status="PASS" start="2024-07-16T17:14:11.247451" elapsed="3.732714"/>
 </kw>
-<status status="PASS" start="2024-05-27T09:48:07.119463" elapsed="10.721482"/>
+<status status="PASS" start="2024-07-16T17:14:11.247451" elapsed="3.732714"/>
 </kw>
-<status status="FAIL" start="2024-05-27T09:41:53.134315" elapsed="384.706630">Setup failed:
-TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE6D97E]
-	(No symbol) [0x00007FF7DDE85C6F]
-	(No symbol) [0x00007FF7DDE8B67A]
-	(No symbol) [0x00007FF7DDE5F33A]
-	(No symbol) [0x00007FF7DDE859B1]
-	(No symbol) [0x00007FF7DDF0BB5B]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</status>
+<tag>smoke</tag>
+<status status="PASS" start="2024-07-16T17:13:57.014943" elapsed="17.965222"/>
 </test>
-<doc>This checks the Receive payment fubctionality</doc>
-<status status="FAIL" start="2024-05-27T09:41:41.916605" elapsed="395.965521"/>
+<doc>This checks the Receive QR code fubctionality</doc>
+<status status="PASS" start="2024-07-16T17:13:54.938393" elapsed="20.041772"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="test validReceivePay">test validReceivePay</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="test blankQRcode">test blankQRcode</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-27T09:48:06.900604" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=125.0.6422.78)
-Stacktrace:
-	GetHandleVerifier [0x00007FF7DE041F22+60322]
-	(No symbol) [0x00007FF7DDFBCE99]
-	(No symbol) [0x00007FF7DDE77EBA]
-	(No symbol) [0x00007FF7DDE6070D]
-	(No symbol) [0x00007FF7DDE60410]
-	(No symbol) [0x00007FF7DDE5E39D]
-	(No symbol) [0x00007FF7DDE5EBAF]
-	(No symbol) [0x00007FF7DDE860D9]
-	(No symbol) [0x00007FF7DDF1AFE9]
-	(No symbol) [0x00007FF7DDEEC21A]
-	(No symbol) [0x00007FF7DDF0BC80]
-	(No symbol) [0x00007FF7DDEEBFC3]
-	(No symbol) [0x00007FF7DDEB9617]
-	(No symbol) [0x00007FF7DDEBA211]
-	GetHandleVerifier [0x00007FF7DE35946D+3301613]
-	GetHandleVerifier [0x00007FF7DE3A3693+3605267]
-	GetHandleVerifier [0x00007FF7DE399410+3563664]
-	GetHandleVerifier [0x00007FF7DE0F42F6+790390]
-	(No symbol) [0x00007FF7DDFC74DF]
-	(No symbol) [0x00007FF7DDFC33D4]
-	(No symbol) [0x00007FF7DDFC3562]
-	(No symbol) [0x00007FF7DDFB2F6F]
-	BaseThreadInitThunk [0x00007FFB56E4257D+29]
-	RtlUserThreadStart [0x00007FFB57BCAA48+40]
-</msg>
 </errors>
 </robot>

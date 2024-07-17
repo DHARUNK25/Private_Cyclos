@@ -1,0 +1,37 @@
+datasources:945dbff87d85ce484e7d9462efea9c18a2baf7e6
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:a9c93a9622e5f510fd5288ff56a122ab0f8f05e6
+--suite TestCases.Test Advertisement
+--suite TestCases.Test Pay User Invalid
+--suite TestCases.Test Payment To User
+--suite TestCases.test Blankfields
+--suite TestCases.test blankAmount
+--suite TestCases.test blankUserfields
+--suite TestCases.test recurringPayment
+--suite TestCases.Test Logout
+--suite TestCases.Test Myadvertisement
+--suite TestCases.Test Register
+--suite TestCases.Test User Payment
+--suite TestCases.test addUserToContact
+--suite TestCases.test alreadyExistsEmail
+--suite TestCases.test blankAmountQRcode
+--suite TestCases.test blankAmountReceivePay
+--suite TestCases.test blankDescReceivePay
+--suite TestCases.test blankDescripQRcode
+--suite TestCases.test blankFieldRegister
+--suite TestCases.test blankQRcode
+--suite TestCases.test blankUserReceivePay
+--suite TestCases.test businessDirectory
+--suite TestCases.test cancel recurringPayment
+--suite TestCases.test confirmPasswordRegister
+--suite TestCases.test invalidEmailRegister
+--suite TestCases.test invalidLogin
+--suite TestCases.test invalidPasswordRegister
+--suite TestCases.test invalidReceivePay
+--suite TestCases.test mandatoryFieldRegister
+--suite TestCases.test memberAccount
+--suite TestCases.test receiveQRcode
+--suite TestCases.test validLogin
+--suite TestCases.test validQRcode
+--suite TestCases.test validReceivePay

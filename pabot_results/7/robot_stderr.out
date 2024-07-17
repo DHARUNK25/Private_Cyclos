@@ -1,0 +1,5 @@
+[ ERROR ] [ DataDriver ] Error in robot file:
+  File "E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankDescReceivePay.robot", line 0
+[ ERROR ] In source file:
+  File "E:\PilotProject_Cyclos_Team1-1\TestCases\..\TestData\receivePay_data.xlsx", line 0
+[ ERROR ] Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${amount}.

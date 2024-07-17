@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T11:32:43.009941" rpa="false" schemaversion="5">
+<suite id="s1" name="PilotProject Cyclos Team1-1" source="E:\PilotProject_Cyclos_Team1-1">
+<suite id="s1-s1" name="TestCases" source="E:\PilotProject_Cyclos_Team1-1\TestCases">
+<suite id="s1-s1-s1" name="test blankDescReceivePay" source="E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankDescReceivePay.robot">
+<test id="s1-s1-s1-t1" name="Validate Receive payment with data" line="18">
+<status status="FAIL" start="2024-05-28T11:32:45.048874" elapsed="0.001993">Test cannot be empty.</status>
+</test>
+<doc>This checks the Receive payment fubctionality</doc>
+<status status="FAIL" start="2024-05-28T11:32:43.087587" elapsed="1.964277"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:32:43.081117" elapsed="1.973704"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:32:43.042231" elapsed="2.013632"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PilotProject Cyclos Team1-1">PilotProject Cyclos Team1-1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">PilotProject Cyclos Team1-1.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="test blankDescReceivePay">PilotProject Cyclos Team1-1.TestCases.test blankDescReceivePay</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-28T11:32:45.042361" level="ERROR">[ DataDriver ] Error in robot file:
+  File "E:\PilotProject_Cyclos_Team1-1\TestCases\test_blankDescReceivePay.robot", line 0</msg>
+<msg time="2024-05-28T11:32:45.043362" level="ERROR">In source file:
+  File "E:\PilotProject_Cyclos_Team1-1\TestCases\..\TestData\receivePay_data.xlsx", line 0</msg>
+<msg time="2024-05-28T11:32:45.048874" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${amount}.</msg>
+</errors>
+</robot>

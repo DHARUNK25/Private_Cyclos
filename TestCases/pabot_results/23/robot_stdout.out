@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test invalidEmailRegister :: Test to Register Page                  
+==============================================================================
+valid register Test case                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidEmailRegister.robot:13
+    T:  valid register Test case    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidEmailRegister.robot:18
+      Valid register with all the fields    name=  abc    login=abc12345    email=abc123@gmail.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidEmailRegister.robot:21
+      Verify Register Page opens    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\RegisterResource.robot:38
+      Element Should Contain    ${verify_register}    User registration
+      |  ${verify_register} = xpath://div[text()=" User registration "] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://div[text()=" User registration "]' not found.
+------------------------------------------------------------------------------
+TestCases.test invalidEmailRegister :: Test to Register Page          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\23\output.xml

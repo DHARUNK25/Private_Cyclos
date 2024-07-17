@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T11:31:53.034268" rpa="false" schemaversion="5">
+<suite id="s1" name="PilotProject Cyclos Team1-1" source="E:\PilotProject_Cyclos_Team1-1">
+<suite id="s1-s1" name="TestCases" source="E:\PilotProject_Cyclos_Team1-1\TestCases">
+<suite id="s1-s1-s1" name="Test Payment To User" source="E:\PilotProject_Cyclos_Team1-1\TestCases\test_payment_to_user.robot">
+<test id="s1-s1-s1-t1" name="To validate payment" line="20">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:31:55.402456" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:31:55.401454" elapsed="4.230070"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:31:59.632974" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:31:59.631524" elapsed="2.384525"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:32:02.016049" elapsed="0.096544"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:32:02.112593" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:31:55.400449" elapsed="6.714140"/>
+</kw>
+<kw name="To validate payment to user functionality with invalid amount">
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:32:02.119046" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:32:12.864220" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:32:12.864220" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:32:02.115586" elapsed="10.753427">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:32:02.115586" elapsed="10.753427">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:32:12.869013" elapsed="0.001136"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:32:12.870149" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the Banking button" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:32:12.870149" elapsed="0.000000"/>
+</kw>
+<kw name="verify the Banking page open" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.870149" elapsed="0.000000"/>
+</kw>
+<kw name="Select the option payment to user" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.871148" elapsed="0.000000"/>
+</kw>
+<kw name="verify the payment to user page open" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.871148" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the username in the to user field" owner="PaymentUser">
+<arg>${user_name}</arg>
+<status status="NOT RUN" start="2024-05-28T11:32:12.871148" elapsed="0.000000"/>
+</kw>
+<kw name="Select the user" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.871148" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the valid amount in the amount field" owner="PaymentUser">
+<arg>${amount_data}</arg>
+<status status="NOT RUN" start="2024-05-28T11:32:12.872144" elapsed="0.000000"/>
+</kw>
+<kw name="Click the scheduling dropdown button" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.872144" elapsed="0.000000"/>
+</kw>
+<kw name="Click the pay now option" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.872144" elapsed="0.000000"/>
+</kw>
+<kw name="Click the next Button in payment page" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.873144" elapsed="0.000000"/>
+</kw>
+<kw name="Click the confirm button in the payment page" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.873144" elapsed="0.000000"/>
+</kw>
+<kw name="verify the exceed maximun payment error message is dispalyed" owner="PaymentUser">
+<status status="NOT RUN" start="2024-05-28T11:32:12.873144" elapsed="0.000994"/>
+</kw>
+<arg>user_name=Dinesh dk</arg>
+<arg>amount_data=10</arg>
+<tag>exceed_max_amount_message</tag>
+<status status="FAIL" start="2024-05-28T11:32:02.114589" elapsed="10.759549">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:32:12.875135" elapsed="2.825376"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:32:12.874138" elapsed="2.826373"/>
+</kw>
+<status status="FAIL" start="2024-05-28T11:31:55.398450" elapsed="20.302061">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<doc>To validate Banking - payment to user Functionality</doc>
+<status status="FAIL" start="2024-05-28T11:31:53.097056" elapsed="22.604733"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:31:53.078648" elapsed="22.624152"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:31:53.052714" elapsed="22.650086"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PilotProject Cyclos Team1-1">PilotProject Cyclos Team1-1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">PilotProject Cyclos Team1-1.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test Payment To User">PilotProject Cyclos Team1-1.TestCases.Test Payment To User</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:30:28.469162" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test businessDirectory" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_businessDirectory.robot">
+<test id="s1-s1-t1" name="Validate Business Directory functionality with valid data" line="16">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:29.577490" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:30:29.577490" elapsed="1.989684"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:31.567174" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:30:31.567174" elapsed="47.088104"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:18.655278" elapsed="0.091464"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:18.746742" elapsed="0.001554"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:29.571973" elapsed="49.176323"/>
+</kw>
+<kw name="To Validate the Business Directory functionality with valid data">
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:31:23.754816" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:18.751340" elapsed="5.003476"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:23.754816" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<msg time="2024-06-01T21:31:29.052024" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:31:29.052024" level="FAIL">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:31:23.754816" elapsed="5.305326">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:18.748296" elapsed="10.311846">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>demo</arg>
+<arg>1234</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:29.060142" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.060142" elapsed="0.005277"/>
+</kw>
+<kw name="Click the Marketplace Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.065419" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Marketplace page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.065419" elapsed="0.000000"/>
+</kw>
+<kw name="Select the option business directory" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.065419" elapsed="0.000000"/>
+</kw>
+<kw name="verify the business directory page open" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.065419" elapsed="0.003032"/>
+</kw>
+<kw name="Enter the key in keyword field" owner="BusinessDirectoryResource">
+<arg>${valid_keyword}</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:29.068451" elapsed="0.000000"/>
+</kw>
+<kw name="Click the orderby button" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.068451" elapsed="0.000000"/>
+</kw>
+<kw name="Click the relevance option" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.068451" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the relevance results" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:31:29.068451" elapsed="0.000000"/>
+</kw>
+<arg>valid_keyword=shop</arg>
+<doc>This checks the Business Directory functionality with valid data</doc>
+<status status="FAIL" start="2024-06-01T21:31:18.748296" elapsed="10.320155">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:31:29.068451" elapsed="2.338753"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:29.068451" elapsed="2.338753"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-06-01T21:30:29.571973" elapsed="61.835231">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</test>
+<doc>This checks the Business Directory functionality</doc>
+<status status="FAIL" start="2024-06-01T21:30:28.507024" elapsed="62.900180"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:30:28.487753" elapsed="62.922146"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test businessDirectory">TestCases.test businessDirectory</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

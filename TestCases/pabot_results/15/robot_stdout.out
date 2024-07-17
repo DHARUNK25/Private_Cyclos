@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test blankDescReceivePay :: This checks the Receive payment fubct...
+==============================================================================
+Validate Receive payment with data                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankDescReceivePay.robot:19
+    T:  Validate Receive payment with data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankDescReceivePay.robot:22
+      Validate the Receive payment functionality with empty description    user=demo    amount=100    blank_description=   
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankDescReceivePay.robot:30
+      Verify the Receive payment page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\ReceivePaymentResouce.robot:23
+      Wait Until Element Is Visible    ${receive_payment}
+      |  ${receive_payment} = xpath:(//nav[@class='navbar d-flex flex-column align-items-stretch']//a/div)[4] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath:(//nav[@class='navbar d-flex flex-column align-items-stretch']//a/div)[4]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.test blankDescReceivePay :: This checks the Receive paym... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\15\output.xml

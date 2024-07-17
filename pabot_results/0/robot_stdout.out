@@ -1,0 +1,107 @@
+==============================================================================
+PilotProject Cyclos Team1-1                                                   
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                         
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases.Test Advertisement :: To validate Adv...
+==============================================================================
+verify that the valid keyword is entered in the keyword field           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:14
+    T:  verify that the valid keyword is entered in the keyword field    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:23
+      AdvertisementResource.verify the keyword based items displayed    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.verify the keyword based items displayed' found. Did you mean:
+    AdvertisementResource.verify the keyword based image displayed
+------------------------------------------------------------------------------
+verify that the Invalid keyword is entered in the keyword field         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:27
+    T:  verify that the Invalid keyword is entered in the keyword field    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:36
+      AdvertisementResource.verify the invalid keyword error message is displayed    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.verify the invalid keyword error message is displayed' found. Did you mean:
+    AdvertisementResource.verify the invalid keyword message is displayed
+------------------------------------------------------------------------------
+Verify the advertisements functionality with dropdownlist order by...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:40
+    T:  Verify the advertisements functionality with dropdownlist order by Relevance    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:47
+      AdvertisementResource.Click the show advertisement button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.Click the show advertisement button' found. Did you mean:
+    AdvertisementResource.Click on the advertisement page button
+------------------------------------------------------------------------------
+Verify the advertisements functionality with dropdownlist order by...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:53
+    T:  Verify the advertisements functionality with dropdownlist order by last published    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:60
+      AdvertisementResource.Click the show advertisement button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.Click the show advertisement button' found. Did you mean:
+    AdvertisementResource.Click on the advertisement page button
+------------------------------------------------------------------------------
+Verify the advertisements functionality with dropdownlist order by...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:67
+    T:  Verify the advertisements functionality with dropdownlist order by lowest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:74
+      AdvertisementResource.Click the show advertisement button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.Click the show advertisement button' found. Did you mean:
+    AdvertisementResource.Click on the advertisement page button
+------------------------------------------------------------------------------
+Verify the advertisements functionality with dropdownlist order by...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:81
+    T:  Verify the advertisements functionality with dropdownlist order by Highest    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:88
+      AdvertisementResource.Click the show advertisement button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.Click the show advertisement button' found. Did you mean:
+    AdvertisementResource.Click on the advertisement page button
+------------------------------------------------------------------------------
+verify the wishlist functionality                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:95
+    T:  verify the wishlist functionality    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_advertisement.robot:102
+      AdvertisementResource.Select the favourite only checkbox    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'AdvertisementResource.Select the favourite only checkbox' found.
+------------------------------------------------------------------------------
+PilotProject Cyclos Team1-1.TestCases.Test Advertisement :: To val... | FAIL |
+7 tests, 0 passed, 7 failed
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                 | FAIL |
+7 tests, 0 passed, 7 failed
+==============================================================================
+PilotProject Cyclos Team1-1                                           | FAIL |
+7 tests, 0 passed, 7 failed
+==============================================================================
+Output:  E:\PilotProject_Cyclos_Team1-1\pabot_results\0\output.xml

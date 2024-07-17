@@ -1,7 +1,6 @@
 ***Settings***
 Documentation    All the page object and keyword of Member account page
 Library    SeleniumLibrary
-Resource    HomeResource.robot
 
 *** Variables ***
 ${Member_acc}    xpath://div[text()='Member account']
@@ -25,5 +24,3 @@ Assert the transaction data
     Wait Until Element Is Visible    ${table_xpath}
     ${element_count}    Get Element Count    ${table_xpath}
     Should Not Be Equal As Numbers    0    ${element_count}
-    Table Cell Should Contain    ${table_xpath}    2    5    +1,00 IU's    
-

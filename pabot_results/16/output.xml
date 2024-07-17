@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T11:33:54.693034" rpa="false" schemaversion="5">
+<suite id="s1" name="PilotProject Cyclos Team1-1" source="E:\PilotProject_Cyclos_Team1-1">
+<suite id="s1-s1" name="TestCases" source="E:\PilotProject_Cyclos_Team1-1\TestCases">
+<suite id="s1-s1-s1" name="test invalidReceivePay" source="E:\PilotProject_Cyclos_Team1-1\TestCases\test_invalidReceivePay.robot">
+<test id="s1-s1-s1-t1" name="Validate Receive payment with data" line="18">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:33:57.263379" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:33:57.262390" elapsed="6.411734"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:03.675120" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:34:03.674124" elapsed="2.219936"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:34:05.895060" elapsed="0.031204"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:34:05.926264" elapsed="0.002395"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:33:57.256400" elapsed="8.672259"/>
+</kw>
+<kw name="Validate the Receive payment functionality with empty data">
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:05.931161" level="INFO">Typing text 'sandhiyas' into text field 'css:input[placeholder="User"]'.</msg>
+<msg time="2024-05-28T11:34:11.176933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:34:11.177937" level="FAIL">Element with locator 'css:input[placeholder="User"]' not found.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:34:05.929658" elapsed="5.252595">Element with locator 'css:input[placeholder="User"]' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T11:34:11.183255" elapsed="0.000000"/>
+</kw>
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="FAIL" start="2024-05-28T11:34:05.929658" elapsed="5.253597">Element with locator 'css:input[placeholder="User"]' not found.</status>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:34:11.183255" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:11.184727" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:11.184727" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive payment page" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-05-28T11:34:11.185730" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the receive payment form with data" owner="ReceivePaymentResouce">
+<arg>${blank_user}</arg>
+<arg>${blank_amount}</arg>
+<arg>${blank_description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:34:11.185730" elapsed="0.000000"/>
+</kw>
+<kw name="verify user error message is displayed" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-05-28T11:34:11.185730" elapsed="0.000000"/>
+</kw>
+<kw name="verify amount error message is displayed" owner="ReceivePaymentResouce">
+<status status="NOT RUN" start="2024-05-28T11:34:11.185730" elapsed="0.000997"/>
+</kw>
+<arg>blank_user=   </arg>
+<arg>blank_amount=   </arg>
+<arg>blank_description=  </arg>
+<tag>invalid_Receive_payment</tag>
+<doc>This checks the Receive payment functionality with empty data</doc>
+<status status="FAIL" start="2024-05-28T11:34:05.928659" elapsed="5.258068">Element with locator 'css:input[placeholder="User"]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:34:11.186727" elapsed="3.443781"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:11.186727" elapsed="3.443781"/>
+</kw>
+<status status="FAIL" start="2024-05-28T11:33:57.253797" elapsed="17.376711">Element with locator 'css:input[placeholder="User"]' not found.</status>
+</test>
+<doc>This checks the Receive payment fubctionality</doc>
+<status status="FAIL" start="2024-05-28T11:33:54.775514" elapsed="19.856991"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:33:54.772029" elapsed="19.861987"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:33:54.724445" elapsed="19.909571"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PilotProject Cyclos Team1-1">PilotProject Cyclos Team1-1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">PilotProject Cyclos Team1-1.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="test invalidReceivePay">PilotProject Cyclos Team1-1.TestCases.test invalidReceivePay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,7 +1,6 @@
 ***Settings***
 Documentation    All the page object and keyword of Receive QR code page
 Library    SeleniumLibrary
-Resource    HomeResource.robot
 
 *** Variables ***
 ${receive_qr}    xpath://div[text()='Receive QR-code']

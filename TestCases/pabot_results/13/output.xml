@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:30:14.274873" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test blankAmountQRcode" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_blankAmountQRcode.robot">
+<test id="s1-s1-t1" name="Validate Receive QR code with blank amount" line="17">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:15.780652" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:30:15.780652" elapsed="2.299534"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:18.080186" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:30:18.080186" elapsed="43.077964"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:01.158150" elapsed="0.140191"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:01.299552" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:15.780652" elapsed="45.518900"/>
+</kw>
+<kw name="Validate the Receive QR code functionality with empty amount">
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:31:06.305400" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:01.303543" elapsed="5.001857"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:06.306951" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:06.305400" elapsed="0.182329"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:01.303543" elapsed="5.184186"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:06.492415" level="INFO">Typing text 'sandhiyas' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:06.489854" elapsed="0.239308"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:06.734733" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:31:06.864127" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:06.729162" elapsed="0.273227"/>
+</kw>
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="PASS" start="2024-06-01T21:31:06.489854" elapsed="0.512535"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:07.003605" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:07.003605" elapsed="0.131953"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:07.002389" elapsed="0.133169"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:12.692158" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:31:12.692158" level="FAIL">Element 'xpath://div[text()='Banking']' not visible after 5 seconds.</msg>
+<arg>${Banking}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-01T21:31:07.141099" elapsed="5.556143">Element 'xpath://div[text()='Banking']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Banking}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:31:12.697242" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:07.141099" elapsed="5.556143">Element 'xpath://div[text()='Banking']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:12.697242" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-06-01T21:31:12.697242" elapsed="0.003019"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${blank_amount}</arg>
+<arg>${description}</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:12.700261" elapsed="0.000000"/>
+</kw>
+<kw name="verify error message is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-06-01T21:31:12.700261" elapsed="0.000000"/>
+</kw>
+<arg>blank_amount=</arg>
+<arg>description=Payment through QR code</arg>
+<doc>This checks the qr code with blank amount</doc>
+<status status="FAIL" start="2024-06-01T21:31:01.299552" elapsed="11.400709">Element 'xpath://div[text()='Banking']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:31:12.700261" elapsed="2.267021"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:12.700261" elapsed="2.267021"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-06-01T21:30:15.776553" elapsed="59.190729">Element 'xpath://div[text()='Banking']' not visible after 5 seconds.</status>
+</test>
+<doc>This checks the Receive QR code fubctionality</doc>
+<status status="FAIL" start="2024-06-01T21:30:14.312117" elapsed="60.655165"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:30:14.294382" elapsed="60.677473"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test blankAmountQRcode">TestCases.test blankAmountQRcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test businessDirectory :: This checks the Business Directory func...
+==============================================================================
+Validate Business Directory functionality with valid data               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_businessDirectory.robot:16
+    T:  Validate Business Directory functionality with valid data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_businessDirectory.robot:20
+      To Validate the Business Directory functionality with valid data    valid_keyword=shop
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_businessDirectory.robot:23
+      Go to Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\HomeResource.robot:31
+      Click Element    ${login_btn}
+      |  ${login_btn} = xpath:(//div[@class="ml-2"])[3] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.
+------------------------------------------------------------------------------
+TestCases.test businessDirectory :: This checks the Business Direc... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\20\output.xml

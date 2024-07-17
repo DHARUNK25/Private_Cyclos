@@ -1,0 +1,36 @@
+==============================================================================
+PilotProject Cyclos Team1-1                                                   
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                         
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases.Test Payment To User :: To validate B...
+==============================================================================
+To validate payment                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_payment_to_user.robot:20
+    T:  To validate payment    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_payment_to_user.robot:46
+      To validate payment to user functionality with invalid amount    user_name=Dinesh dk    amount_data=10
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_payment_to_user.robot:49
+      click the login button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\Resources\LoginResource.robot:22
+      Click Button    ${submit_btn}
+      |  ${submit_btn} = xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.
+------------------------------------------------------------------------------
+PilotProject Cyclos Team1-1.TestCases.Test Payment To User :: To v... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\PilotProject_Cyclos_Team1-1\pabot_results\2\output.xml

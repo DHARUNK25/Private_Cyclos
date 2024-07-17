@@ -1,0 +1,36 @@
+==============================================================================
+PilotProject Cyclos Team1-1                                                   
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                         
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases.test validQRcode :: This checks the R...
+==============================================================================
+Validate Receive QR code with valid data                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_validQRcode.robot:16
+    T:  Validate Receive QR code with valid data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_validQRcode.robot:19
+      Validate the Receive QR code functionality with valid data    amount=100    description=Payment through QR code
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\TestCases\test_validQRcode.robot:23
+      click the login button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\PilotProject_Cyclos_Team1-1\Resources\LoginResource.robot:22
+      Click Button    ${submit_btn}
+      |  ${submit_btn} = xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.
+------------------------------------------------------------------------------
+PilotProject Cyclos Team1-1.TestCases.test validQRcode :: This che... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1.TestCases                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+PilotProject Cyclos Team1-1                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\PilotProject_Cyclos_Team1-1\pabot_results\21\output.xml

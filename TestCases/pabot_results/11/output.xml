@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:29:30.983478" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test addUserToContact" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_addUserToContact.robot">
+<test id="s1-s1-t1" name="Validate add to contact in Business Directory functionality" line="16">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:33.267871" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:29:33.262854" elapsed="4.985794"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:38.248648" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:29:38.248648" elapsed="3.206808"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:29:41.455456" elapsed="2.912272"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:29:44.367728" elapsed="0.015303"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:33.262854" elapsed="11.120177"/>
+</kw>
+<kw name="To Validate the add to contact in Business Directory functionality">
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:29:49.401339" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:29:44.387587" elapsed="5.013752"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:49.401339" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:49.401339" elapsed="1.466840"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:44.387047" elapsed="6.481132"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:50.871742" level="INFO">Typing text 'dharun' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:50.869730" elapsed="2.195923"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:53.074929" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:29:53.647762" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:53.065653" elapsed="1.621106"/>
+</kw>
+<arg>dharun</arg>
+<arg>1234</arg>
+<status status="PASS" start="2024-06-01T21:29:50.868179" elapsed="3.818580"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:54.690102" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:54.688975" elapsed="2.257148"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:54.687864" elapsed="2.258259"/>
+</kw>
+<kw name="Click the Marketplace Option" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace_Xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:29:56.946123" elapsed="1.703651"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:58.657774" level="INFO">Clicking element 'xpath://a[@id='menu_marketplace']'.</msg>
+<arg>${Marketplace_Xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:58.649774" elapsed="0.936207"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:56.946123" elapsed="2.639858"/>
+</kw>
+<kw name="Verify the Marketplace page is displayed" owner="HomeResource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:59.585981" level="INFO">Verifying element 'xpath://div[@class='side-menu-title' and text()=' Marketplace ']' contains exact text 'Marketplace'.</msg>
+<arg>${Marketplace_page_verify}</arg>
+<arg>${Marketplace_page_keyword}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-01T21:29:59.585981" elapsed="5.484709"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:59.585981" elapsed="5.484709"/>
+</kw>
+<kw name="Select the option business directory" owner="BusinessDirectoryResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${business_dir}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:30:05.070690" elapsed="0.329469"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:05.400159" level="INFO">Clicking element 'xpath:(//nav[@class='navbar d-flex flex-column align-items-stretch']//a/div)[1]'.</msg>
+<arg>${business_dir}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:30:05.400159" elapsed="1.111916"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:05.070690" elapsed="1.441385"/>
+</kw>
+<kw name="verify the business directory page open" owner="BusinessDirectoryResource">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:06.514637" level="INFO">Verifying element 'xpath://div[text()=' Business directory ']' contains exact text 'Business directory'.</msg>
+<arg>${business_dir_title}</arg>
+<arg>${business_dir_title_verify}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-01T21:30:06.514637" elapsed="0.420337"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:06.512075" elapsed="0.422899"/>
+</kw>
+<kw name="Enter the key in keyword field" owner="BusinessDirectoryResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:06.934974" level="INFO">Typing text 'shop' into text field 'xpath://div[@class='d-flex label-value-value']/input'.</msg>
+<arg>${input_key}</arg>
+<arg>${keyword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:30:06.934974" elapsed="0.479694"/>
+</kw>
+<arg>${valid_keyword}</arg>
+<status status="PASS" start="2024-06-01T21:30:06.934974" elapsed="0.479694"/>
+</kw>
+<kw name="Add user to Contact" owner="BusinessDirectoryResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${contact}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:30:07.416464" elapsed="0.258623"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:07.679966" level="INFO">Clicking element 'xpath:(//div[@class='row tiled-results']//a)[3]'.</msg>
+<msg time="2024-06-01T21:30:08.141304" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:30:08.141304" level="FAIL">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EA291F52+60322]
+	(No symbol) [0x00007FF6EA20CEC9]
+	(No symbol) [0x00007FF6EA0C7EBA]
+	(No symbol) [0x00007FF6EA0CDCEE]
+	(No symbol) [0x00007FF6EA0D0641]
+	(No symbol) [0x00007FF6EA0D06E0]
+	(No symbol) [0x00007FF6EA11968C]
+	(No symbol) [0x00007FF6EA118687]
+	(No symbol) [0x00007FF6EA10B491]
+	(No symbol) [0x00007FF6EA13C21A]
+	(No symbol) [0x00007FF6EA10ADB6]
+	(No symbol) [0x00007FF6EA13C430]
+	(No symbol) [0x00007FF6EA15BC80]
+	(No symbol) [0x00007FF6EA13BFC3]
+	(No symbol) [0x00007FF6EA109617]
+	(No symbol) [0x00007FF6EA10A211]
+	GetHandleVerifier [0x00007FF6EA5A94AD+3301629]
+	GetHandleVerifier [0x00007FF6EA5F36D3+3605283]
+	GetHandleVerifier [0x00007FF6EA5E9450+3563680]
+	GetHandleVerifier [0x00007FF6EA344326+790390]
+	(No symbol) [0x00007FF6EA21750F]
+	(No symbol) [0x00007FF6EA213404]
+	(No symbol) [0x00007FF6EA213592]
+	(No symbol) [0x00007FF6EA202F9F]
+	BaseThreadInitThunk [0x00007FFDB035257D+29]
+	RtlUserThreadStart [0x00007FFDB0E4AA48+40]
+</msg>
+<arg>${contact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:30:07.675087" elapsed="0.477642">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EA291F52+60322]
+	(No symbol) [0x00007FF6EA20CEC9]
+	(No symbol) [0x00007FF6EA0C7EBA]
+	(No symbol) [0x00007FF6EA0CDCEE]
+	(No symbol) [0x00007FF6EA0D0641]
+	(No symbol) [0x00007FF6EA0D06E0]
+	(No symbol) [0x00007FF6EA11968C]
+	(No symbol) [0x00007FF6EA118687]
+	(No symbol) [0x00007FF6EA10B491]
+	(No symbol) [0x00007FF6EA13C21A]
+	(No symbol) [0x00007FF6EA10ADB6]
+	(No symbol) [0x00007FF6EA13C430]
+	(No symbol) [0x00007FF6EA15BC80]
+	(No symbol) [0x00007FF6EA13BFC3]
+	(No symbol) [0x00007FF6EA109617]
+	(No symbol) [0x00007FF6EA10A211]
+	GetHandleVerifier [0x00007FF6EA5A94AD+3301629]
+	GetHandleVerifier [0x00007FF6EA5F36D3+3605283]
+	GetHandleVerifier [0x00007FF6EA5E9450+3563680]
+	GetHandleVerifier [0x00007FF6EA344326+790390]
+	(No symbol) [0x00007FF6EA21750F]
+	(No symbol) [0x00007FF6EA213404]
+	(No symbol) [0x00007FF6EA213592]
+	(No symbol) [0x00007FF6EA202F9F]
+	BaseThreadInitThunk [0x00007FFDB035257D+29]
+	RtlUserThreadStart [0x00007FFDB0E4AA48+40]
+</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${add_to_contact}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-01T21:30:08.152729" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${add_to_contact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:30:08.152729" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:30:07.414668" elapsed="0.738061">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EA291F52+60322]
+	(No symbol) [0x00007FF6EA20CEC9]
+	(No symbol) [0x00007FF6EA0C7EBA]
+	(No symbol) [0x00007FF6EA0CDCEE]
+	(No symbol) [0x00007FF6EA0D0641]
+	(No symbol) [0x00007FF6EA0D06E0]
+	(No symbol) [0x00007FF6EA11968C]
+	(No symbol) [0x00007FF6EA118687]
+	(No symbol) [0x00007FF6EA10B491]
+	(No symbol) [0x00007FF6EA13C21A]
+	(No symbol) [0x00007FF6EA10ADB6]
+	(No symbol) [0x00007FF6EA13C430]
+	(No symbol) [0x00007FF6EA15BC80]
+	(No symbol) [0x00007FF6EA13BFC3]
+	(No symbol) [0x00007FF6EA109617]
+	(No symbol) [0x00007FF6EA10A211]
+	GetHandleVerifier [0x00007FF6EA5A94AD+3301629]
+	GetHandleVerifier [0x00007FF6EA5F36D3+3605283]
+	GetHandleVerifier [0x00007FF6EA5E9450+3563680]
+	GetHandleVerifier [0x00007FF6EA344326+790390]
+	(No symbol) [0x00007FF6EA21750F]
+	(No symbol) [0x00007FF6EA213404]
+	(No symbol) [0x00007FF6EA213592]
+	(No symbol) [0x00007FF6EA202F9F]
+	BaseThreadInitThunk [0x00007FFDB035257D+29]
+	RtlUserThreadStart [0x00007FFDB0E4AA48+40]
+</status>
+</kw>
+<kw name="Verify the contact is added" owner="BusinessDirectoryResource">
+<status status="NOT RUN" start="2024-06-01T21:30:08.152729" elapsed="0.000000"/>
+</kw>
+<arg>valid_keyword=shop</arg>
+<doc>This checks the add to contact in Business Directory functionality</doc>
+<status status="FAIL" start="2024-06-01T21:29:44.383031" elapsed="23.775360">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EA291F52+60322]
+	(No symbol) [0x00007FF6EA20CEC9]
+	(No symbol) [0x00007FF6EA0C7EBA]
+	(No symbol) [0x00007FF6EA0CDCEE]
+	(No symbol) [0x00007FF6EA0D0641]
+	(No symbol) [0x00007FF6EA0D06E0]
+	(No symbol) [0x00007FF6EA11968C]
+	(No symbol) [0x00007FF6EA118687]
+	(No symbol) [0x00007FF6EA10B491]
+	(No symbol) [0x00007FF6EA13C21A]
+	(No symbol) [0x00007FF6EA10ADB6]
+	(No symbol) [0x00007FF6EA13C430]
+	(No symbol) [0x00007FF6EA15BC80]
+	(No symbol) [0x00007FF6EA13BFC3]
+	(No symbol) [0x00007FF6EA109617]
+	(No symbol) [0x00007FF6EA10A211]
+	GetHandleVerifier [0x00007FF6EA5A94AD+3301629]
+	GetHandleVerifier [0x00007FF6EA5F36D3+3605283]
+	GetHandleVerifier [0x00007FF6EA5E9450+3563680]
+	GetHandleVerifier [0x00007FF6EA344326+790390]
+	(No symbol) [0x00007FF6EA21750F]
+	(No symbol) [0x00007FF6EA213404]
+	(No symbol) [0x00007FF6EA213592]
+	(No symbol) [0x00007FF6EA202F9F]
+	BaseThreadInitThunk [0x00007FFDB035257D+29]
+	RtlUserThreadStart [0x00007FFDB0E4AA48+40]
+</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:30:08.160913" elapsed="2.484500"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:08.158391" elapsed="2.487022"/>
+</kw>
+<tag>regression</tag>
+<status status="FAIL" start="2024-06-01T21:29:33.262854" elapsed="37.383573">StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EA291F52+60322]
+	(No symbol) [0x00007FF6EA20CEC9]
+	(No symbol) [0x00007FF6EA0C7EBA]
+	(No symbol) [0x00007FF6EA0CDCEE]
+	(No symbol) [0x00007FF6EA0D0641]
+	(No symbol) [0x00007FF6EA0D06E0]
+	(No symbol) [0x00007FF6EA11968C]
+	(No symbol) [0x00007FF6EA118687]
+	(No symbol) [0x00007FF6EA10B491]
+	(No symbol) [0x00007FF6EA13C21A]
+	(No symbol) [0x00007FF6EA10ADB6]
+	(No symbol) [0x00007FF6EA13C430]
+	(No symbol) [0x00007FF6EA15BC80]
+	(No symbol) [0x00007FF6EA13BFC3]
+	(No symbol) [0x00007FF6EA109617]
+	(No symbol) [0x00007FF6EA10A211]
+	GetHandleVerifier [0x00007FF6EA5A94AD+3301629]
+	GetHandleVerifier [0x00007FF6EA5F36D3+3605283]
+	GetHandleVerifier [0x00007FF6EA5E9450+3563680]
+	GetHandleVerifier [0x00007FF6EA344326+790390]
+	(No symbol) [0x00007FF6EA21750F]
+	(No symbol) [0x00007FF6EA213404]
+	(No symbol) [0x00007FF6EA213592]
+	(No symbol) [0x00007FF6EA202F9F]
+	BaseThreadInitThunk [0x00007FFDB035257D+29]
+	RtlUserThreadStart [0x00007FFDB0E4AA48+40]
+</status>
+</test>
+<doc>This checks the Business Directory functionality</doc>
+<status status="FAIL" start="2024-06-01T21:29:31.076763" elapsed="39.572351"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:29:31.021248" elapsed="39.628881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test addUserToContact">TestCases.test addUserToContact</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

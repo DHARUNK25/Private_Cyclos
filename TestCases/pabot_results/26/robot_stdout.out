@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test invalidReceivePay :: This checks the Receive payment fubctio...
+==============================================================================
+Validate Receive payment with data                                      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidReceivePay.robot:19
+    T:  Validate Receive payment with data    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidReceivePay.robot:22
+      Validate the Receive payment functionality with empty data    blank_user=       blank_amount=       blank_description=  
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_invalidReceivePay.robot:26
+      Go to Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\HomeResource.robot:31
+      Click Element    ${login_btn}
+      |  ${login_btn} = xpath:(//div[@class="ml-2"])[3] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.
+------------------------------------------------------------------------------
+TestCases.test invalidReceivePay :: This checks the Receive paymen... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\26\output.xml

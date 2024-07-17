@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T11:34:39.380650" rpa="false" schemaversion="5">
+<suite id="s1" name="PilotProject Cyclos Team1-1" source="E:\PilotProject_Cyclos_Team1-1">
+<suite id="s1-s1" name="TestCases" source="E:\PilotProject_Cyclos_Team1-1\TestCases">
+<suite id="s1-s1-s1" name="test validQRcode" source="E:\PilotProject_Cyclos_Team1-1\TestCases\test_validQRcode.robot">
+<test id="s1-s1-s1-t1" name="Validate Receive QR code with valid data" line="16">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:42.476696" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T11:34:42.475542" elapsed="1.899140"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:44.376063" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T11:34:44.376063" elapsed="0.925755"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T11:34:45.302815" elapsed="1.588747"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T11:34:46.891562" elapsed="0.029937"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:42.472841" elapsed="4.449654"/>
+</kw>
+<kw name="Validate the Receive QR code functionality with valid data">
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T11:34:46.924489" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<msg time="2024-05-28T11:34:57.280041" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T11:34:57.280041" level="FAIL">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T11:34:46.924489" elapsed="10.358542">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T11:34:46.923492" elapsed="10.360535">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>sandhiyas</arg>
+<arg>Sand@123</arg>
+<status status="NOT RUN" start="2024-05-28T11:34:57.284027" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-05-28T11:34:57.284027" elapsed="0.000997"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:57.285024" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-05-28T11:34:57.285024" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Receive qr code page" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:34:57.286021" elapsed="0.000000"/>
+</kw>
+<kw name="Fill the payment form with data" owner="ReceiveQRcodeResources">
+<arg>${amount}</arg>
+<arg>${description}</arg>
+<status status="NOT RUN" start="2024-05-28T11:34:57.286021" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the qr code is displayed" owner="ReceiveQRcodeResources">
+<status status="NOT RUN" start="2024-05-28T11:34:57.287018" elapsed="0.000000"/>
+</kw>
+<arg>amount=100</arg>
+<arg>description=Payment through QR code</arg>
+<tag>valid_ReceiveQRCode</tag>
+<doc>This checks the qr code with valid data</doc>
+<status status="FAIL" start="2024-05-28T11:34:46.922495" elapsed="10.365522">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T11:34:57.289012" elapsed="2.867821"/>
+</kw>
+<status status="PASS" start="2024-05-28T11:34:57.288017" elapsed="2.868816"/>
+</kw>
+<status status="FAIL" start="2024-05-28T11:34:42.468309" elapsed="17.688524">Button with locator 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]' not found.</status>
+</test>
+<doc>This checks the Receive QR code fubctionality</doc>
+<status status="FAIL" start="2024-05-28T11:34:39.422384" elapsed="20.735446"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:34:39.419394" elapsed="20.740429"/>
+</suite>
+<status status="FAIL" start="2024-05-28T11:34:39.395761" elapsed="20.764062"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PilotProject Cyclos Team1-1">PilotProject Cyclos Team1-1</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">PilotProject Cyclos Team1-1.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="test validQRcode">PilotProject Cyclos Team1-1.TestCases.test validQRcode</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

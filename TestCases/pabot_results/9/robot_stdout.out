@@ -1,0 +1,34 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Register :: Test to Register Page                              
+==============================================================================
+valid register Test case                                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_register.robot:13
+    T:  valid register Test case    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_register.robot:18
+      Valid register with all the fields    name=  abc    login=abc12345    email=abc123@gmail.com    website=www.google.com    gender=male    mobile=9856743210    land_line=(201) 555-0123    address=gandhi street    zip=637503    city=salem    region=tamilnadu    password=abc@123    confirm_password=abc@123
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_register.robot:29
+      fill password fields    ${password}    ${confirm_password}
+      |  ${password} = <Unable to define variable value>
+      |  ${confirm_password} = xpath://input-field[@formcontrolname="confirmationValue"]/label-value/div/div/input (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\RegisterResource.robot:74
+      Input Password    ${password_field}    ${pass}
+      |  ${password_field} = xpath://input-field[@formcontrolname="value"]/label-value/div/div/input (str)
+      |  ${pass} = abc@123 (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://input-field[@formcontrolname="value"]/label-value/div/div/input' not found.
+------------------------------------------------------------------------------
+TestCases.Test Register :: Test to Register Page                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\9\output.xml

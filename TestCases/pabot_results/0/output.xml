@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:29:30.906825" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="Test Advertisement" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_advertisement.robot">
+<test id="s1-s1-t1" name="verify that the valid keyword is entered in the keyword field" line="14">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:31.640090" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:29:31.640090" elapsed="4.276274"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:35.916364" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:29:35.916364" elapsed="1.568323"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:29:37.484687" elapsed="2.431657"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:29:39.916344" elapsed="0.012644"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:31.640090" elapsed="8.288898"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:29:44.931808" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:29:39.931068" elapsed="5.000740"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:44.932825" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:44.931808" elapsed="1.967777"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:39.928988" elapsed="6.970597"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:46.905325" level="INFO">Typing text 'Sanjay_stark' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:46.903640" elapsed="2.997420"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:49.901060" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:29:51.362644" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:49.901060" elapsed="3.164593"/>
+</kw>
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="PASS" start="2024-06-01T21:29:46.899585" elapsed="6.166068"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:53.073711" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:53.065653" elapsed="1.260407"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:53.065653" elapsed="1.260407"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:29:54.326060" elapsed="2.272491"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:29:56.598551" level="INFO">Clicking element 'xpath://div[text()="Marketplace"]'.</msg>
+<arg>${Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:29:56.598551" elapsed="2.059223"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:54.326060" elapsed="4.331714"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Advertisement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:29:58.657774" elapsed="3.907882"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:02.565656" level="INFO">Clicking element 'xpath://div[text()='Advertisements']'.</msg>
+<arg>${Advertisement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:30:02.565656" elapsed="0.659812"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:29:58.657774" elapsed="4.571222"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:30:08.233840" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:30:03.228996" elapsed="5.004844"/>
+</kw>
+<kw name="Enter the valid Keyword in the keyword box" owner="AdvertisementResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:08.233840" level="INFO">Typing text 'food' into text field 'xpath=(//div[@class='d-flex label-value-value']//input)[1]'.</msg>
+<arg>${keyword}</arg>
+<arg>food</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:30:08.233840" elapsed="0.778871"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:08.233840" elapsed="0.778871"/>
+</kw>
+<kw name="verify the keyword based items displayed" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${keyword_based}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:30:09.012711" elapsed="1.166142"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:10.178853" level="INFO">Verifying element 'xpath:(//div[text()=' food '])[1]' contains exact text 'food'.</msg>
+<arg>${keyword_based}</arg>
+<arg>food</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-01T21:30:10.178853" elapsed="0.044674"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:09.012711" elapsed="1.210816"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:30:10.223527" elapsed="2.261673"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:10.223527" elapsed="2.261673"/>
+</kw>
+<doc>Validate the Advetisment functionality by giving a valid keyword</doc>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-06-01T21:29:31.640090" elapsed="40.845110"/>
+</test>
+<test id="s1-s1-t2" name="verify that the Invalid keyword is entered in the keyword field" line="28">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:12.494008" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:30:12.492009" elapsed="1.655557"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:30:14.147566" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:30:14.147566" elapsed="60.582190"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:14.729756" elapsed="0.108954"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:14.839747" elapsed="0.002986"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:30:12.490384" elapsed="62.352349"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:31:19.847853" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:14.847783" elapsed="5.000070"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:19.848885" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:19.847853" elapsed="3.287130"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:14.842733" elapsed="8.294606"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:23.141052" level="INFO">Typing text 'Sanjay_stark' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:23.138954" elapsed="0.309973"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:23.452947" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:31:23.665621" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:23.448927" elapsed="0.367324"/>
+</kw>
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="PASS" start="2024-06-01T21:31:23.137860" elapsed="0.678391"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:23.818795" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:23.816251" elapsed="0.147257"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:23.816251" elapsed="0.147257"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:31:23.963508" elapsed="3.436283"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:27.399791" level="INFO">Clicking element 'xpath://div[text()="Marketplace"]'.</msg>
+<arg>${Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:31:27.399791" elapsed="0.157536"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:23.963508" elapsed="3.593819"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:32.947646" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:31:32.947646" level="FAIL">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</msg>
+<arg>${Advertisement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-01T21:31:27.557327" elapsed="5.390319">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Advertisement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:31:32.947646" elapsed="0.003520"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:27.557327" elapsed="5.393839">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-01T21:31:32.951166" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the invalid Keyword in the keyword box" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:31:32.951166" elapsed="0.000000"/>
+</kw>
+<kw name="verify the invalid keyword error message is displayed" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:31:32.951166" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:31:32.951166" elapsed="2.204366"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:32.951166" elapsed="2.204366"/>
+</kw>
+<doc>To Validate the advertisement functionality with invalid keyword</doc>
+<tag>Retest</tag>
+<status status="FAIL" start="2024-06-01T21:30:12.488054" elapsed="82.667478">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s1-t3" name="Verify the advertisements functionality with dropdownlist order by Relevance" line="42">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:35.157509" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:31:35.157509" elapsed="2.240107"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:37.397616" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:31:37.397616" elapsed="34.118943"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:32:11.516559" elapsed="0.074258"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:32:11.590817" elapsed="0.004016"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:35.157509" elapsed="36.437324"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:32:16.598229" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:32:11.596528" elapsed="5.001701"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:16.599281" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<msg time="2024-06-01T21:32:21.831858" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:32:21.831858" level="FAIL">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:32:16.598229" elapsed="5.233629">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:32:11.596528" elapsed="10.235330">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="NOT RUN" start="2024-06-01T21:32:21.831858" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.831858" elapsed="0.005523"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.837381" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.837381" elapsed="0.000000"/>
+</kw>
+<kw name="Click the show advertisement button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.837381" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the dropdown button Order by" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.837381" elapsed="0.002675"/>
+</kw>
+<kw name="Select the option relevance" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.840056" elapsed="0.000000"/>
+</kw>
+<kw name="verify relevance option" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:21.840056" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:32:21.843674" elapsed="2.192513"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:21.843674" elapsed="2.192513"/>
+</kw>
+<doc>To validate the advertisement functionalist with Relevance</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-06-01T21:31:35.157509" elapsed="48.878678">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</test>
+<test id="s1-s1-t4" name="Verify the advertisements functionality with dropdownlist order by last published" line="56">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:24.037708" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:32:24.037708" elapsed="1.658332"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:25.697052" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:32:25.696040" elapsed="17.758571"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:32:43.454611" elapsed="0.054740"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:32:43.509351" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:24.037708" elapsed="19.471643"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:32:48.515474" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:32:43.515019" elapsed="5.000455"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:48.517071" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:32:48.516532" elapsed="3.784762"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:43.515019" elapsed="8.786275"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:52.306261" level="INFO">Typing text 'Sanjay_stark' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:32:52.306261" elapsed="0.180875"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:52.487136" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:32:52.605270" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:32:52.487136" elapsed="0.232657"/>
+</kw>
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="PASS" start="2024-06-01T21:32:52.301294" elapsed="0.418499"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:52.721198" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:32:52.721198" elapsed="0.114355"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:52.719793" elapsed="0.115760"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:32:52.835553" elapsed="0.910766"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:53.747839" level="INFO">Clicking element 'xpath://div[text()="Marketplace"]'.</msg>
+<arg>${Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:32:53.747839" elapsed="0.086200"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:52.835553" elapsed="0.998486"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:32:59.217076" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:32:59.217076" level="FAIL">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</msg>
+<arg>${Advertisement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-01T21:32:53.836539" elapsed="5.380537">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Advertisement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:32:59.217076" elapsed="0.005693"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:32:53.834039" elapsed="5.388730">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click the show advertisement button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:59.222769" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the dropdown button Order by" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:59.222769" elapsed="0.003750"/>
+</kw>
+<kw name="Select the option last published" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:59.226519" elapsed="0.000000"/>
+</kw>
+<kw name="verify relevance option" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:32:59.226519" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:32:59.231819" elapsed="2.251714"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:32:59.226519" elapsed="2.257014"/>
+</kw>
+<doc>To validate the advertisement functionalist with last published</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-06-01T21:32:24.036187" elapsed="37.447346">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s1-t5" name="Verify the advertisements functionality with dropdownlist order by lowest" line="71">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:33:01.483533" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:33:01.483533" elapsed="2.033647"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:33:03.517180" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:33:03.517180" elapsed="43.907145"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:33:47.424325" elapsed="0.047326"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:33:47.471651" elapsed="0.008024"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:33:01.483533" elapsed="45.996142"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:33:52.480012" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:33:47.479675" elapsed="5.000337"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:33:52.480577" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<msg time="2024-06-01T21:33:57.737265" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:33:57.737265" level="FAIL">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:33:52.480577" elapsed="5.260215">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:33:47.479675" elapsed="10.261117">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="Click the show advertisement button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the dropdown button Order by" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="Select the option lowest price" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.740792" elapsed="0.000000"/>
+</kw>
+<kw name="verify the lowest price" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:33:57.748903" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:33:57.748903" elapsed="2.198589"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:33:57.748903" elapsed="2.198589"/>
+</kw>
+<doc>To validate the advertisement functionalist with lowest price</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-06-01T21:33:01.483533" elapsed="58.463959">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</test>
+<test id="s1-s1-t6" name="Verify the advertisements functionality with dropdownlist order by Highest" line="86">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:33:59.949536" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:33:59.949536" elapsed="1.929885"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:01.879421" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:34:01.879421" elapsed="22.489515"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:34:24.370499" elapsed="0.042883"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:34:24.413382" elapsed="0.003815"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:33:59.949536" elapsed="24.467661"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:34:29.419202" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:34:24.419046" elapsed="5.000156"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:29.419202" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:34:29.419202" elapsed="4.887456"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:34:24.417197" elapsed="9.889461"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:34.306658" level="INFO">Typing text 'Sanjay_stark' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:34:34.306658" elapsed="0.230201"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:34.536859" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:34:34.742673" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:34:34.536859" elapsed="0.353931"/>
+</kw>
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="PASS" start="2024-06-01T21:34:34.306658" elapsed="0.584132"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:34.892030" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:34:34.892030" elapsed="0.127287"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:34:34.890790" elapsed="0.128527"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:34:35.021699" elapsed="0.985486"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:36.008847" level="INFO">Clicking element 'xpath://div[text()="Marketplace"]'.</msg>
+<arg>${Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:34:36.008149" elapsed="0.085870"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:34:35.019317" elapsed="1.074702"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:41.489063" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:34:41.489063" level="FAIL">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</msg>
+<arg>${Advertisement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-01T21:34:36.095216" elapsed="5.393847">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Advertisement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:34:41.491790" elapsed="0.000509"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:34:36.095216" elapsed="5.397083">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click the show advertisement button" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:34:41.492299" elapsed="0.000000"/>
+</kw>
+<kw name="Click on the dropdown button Order by" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:34:41.492299" elapsed="0.000000"/>
+</kw>
+<kw name="Select the option highest price" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:34:41.492299" elapsed="0.000000"/>
+</kw>
+<kw name="verify the highest price" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:34:41.492299" elapsed="0.001507"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:34:41.493806" elapsed="2.257405"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:34:41.493806" elapsed="2.257405"/>
+</kw>
+<doc>To validate the advertisement functionalist with Highest price</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-06-01T21:33:59.949536" elapsed="43.801675">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s1-t7" name="verify the wishlist functionality" line="101">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:43.753689" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:34:43.753689" elapsed="1.867947"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:34:45.621636" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:34:45.621636" elapsed="22.062412"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:35:07.684048" elapsed="0.047215"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:35:07.731263" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:34:43.753689" elapsed="23.977574"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:35:12.736021" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:35:07.735550" elapsed="5.000471"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:12.737062" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:35:12.736021" elapsed="1.845667"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:35:07.735550" elapsed="6.846138"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:14.587860" level="INFO">Typing text 'Sanjay_stark' into text field 'css:input[placeholder="User"]'.</msg>
+<arg>${username}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:35:14.586697" elapsed="0.199893"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:14.786590" level="INFO">Typing password into text field 'css:input[placeholder="Password"]'.</msg>
+<msg time="2024-06-01T21:35:14.871669" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password}</arg>
+<arg>${pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:35:14.786590" elapsed="0.212465"/>
+</kw>
+<arg>Sanjay_stark</arg>
+<arg>Sanjay</arg>
+<status status="PASS" start="2024-06-01T21:35:14.581688" elapsed="0.417367"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:14.999055" level="INFO">Clicking button 'xpath://button[@class="btn d-flex justify-content-center align-items-center w-100 h-100 btn-primary btn-action-primary"]'.</msg>
+<arg>${submit_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:35:14.999055" elapsed="0.167935"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:35:14.999055" elapsed="0.169455"/>
+</kw>
+<kw name="Click on the MarketPlace button" owner="HomeResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Marketplace}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T21:35:15.168510" elapsed="0.925847"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:16.094357" level="INFO">Clicking element 'xpath://div[text()="Marketplace"]'.</msg>
+<arg>${Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T21:35:16.094357" elapsed="0.098708"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:35:15.168510" elapsed="1.024555"/>
+</kw>
+<kw name="Click on the advertisement page button" owner="AdvertisementResource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:35:21.587043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:35:21.587043" level="FAIL">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</msg>
+<arg>${Advertisement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-01T21:35:16.193065" elapsed="5.396001">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Advertisement}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-01T21:35:21.589066" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-01T21:35:16.193065" elapsed="5.396001">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Select the favourite only checkbox" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:35:21.589066" elapsed="0.000000"/>
+</kw>
+<kw name="verify the favourite list contains favorite item" owner="AdvertisementResource">
+<status status="NOT RUN" start="2024-06-01T21:35:21.589066" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:35:21.589066" elapsed="2.232408"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:35:21.589066" elapsed="2.232408"/>
+</kw>
+<doc>To validate the wishlist functionalist</doc>
+<tag>Regression</tag>
+<status status="FAIL" start="2024-06-01T21:34:43.752630" elapsed="40.068844">Element 'xpath://div[text()='Advertisements']' not visible after 5 seconds.</status>
+</test>
+<doc>To validate Advertisement Functionality</doc>
+<status status="FAIL" start="2024-06-01T21:29:30.983478" elapsed="352.837996"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:29:30.956722" elapsed="352.869157"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">Retest</stat>
+<stat pass="1" fail="4" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="6" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="6" skip="0" id="s1-s1" name="Test Advertisement">TestCases.Test Advertisement</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

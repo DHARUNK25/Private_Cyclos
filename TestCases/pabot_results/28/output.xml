@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-01T21:31:39.428830" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases">
+<suite id="s1-s1" name="test memberAccount" source="C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_memberAccount.robot">
+<test id="s1-s1-t1" name="Validate the Member Account" line="13">
+<kw name="Open the Browser with URL" owner="GenericResource" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:39.841883" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${brower_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-06-01T21:31:39.841883" elapsed="2.977795"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:42.819678" level="INFO">Opening url 'https://demo.cyclos.org/ui/home'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T21:31:42.819678" elapsed="2.313914"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T21:31:45.133592" elapsed="4.219992"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-01T21:31:49.353584" elapsed="0.010167"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:39.838893" elapsed="9.524858"/>
+</kw>
+<kw name="Go to Login Page" owner="HomeResource">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-01T21:31:54.368757" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-01T21:31:49.366300" elapsed="5.002457"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T21:31:54.368757" level="INFO">Clicking element 'xpath:(//div[@class="ml-2"])[3]'.</msg>
+<msg time="2024-06-01T21:31:59.619123" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-01T21:31:59.619123" level="FAIL">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</msg>
+<arg>${login_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-01T21:31:54.368757" elapsed="5.255297">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-01T21:31:49.366300" elapsed="10.257754">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</kw>
+<kw name="Fill the login form" owner="LoginResource">
+<arg>dharun</arg>
+<arg>1234</arg>
+<status status="NOT RUN" start="2024-06-01T21:31:59.624054" elapsed="0.002070"/>
+</kw>
+<kw name="click the login button" owner="LoginResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.626289" elapsed="0.000621"/>
+</kw>
+<kw name="Click the Banking Option" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.626910" elapsed="0.001016"/>
+</kw>
+<kw name="Verify the Banking page is displayed" owner="HomeResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.627926" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Member account page" owner="MemberAccountResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.627926" elapsed="0.001545"/>
+</kw>
+<kw name="Verify the balance" owner="MemberAccountResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.629471" elapsed="0.000000"/>
+</kw>
+<kw name="Assert the transaction data" owner="MemberAccountResource">
+<status status="NOT RUN" start="2024-06-01T21:31:59.630433" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T21:31:59.632642" elapsed="2.222555"/>
+</kw>
+<status status="PASS" start="2024-06-01T21:31:59.631542" elapsed="2.223655"/>
+</kw>
+<doc>validate the balance and transaction</doc>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-06-01T21:31:39.838893" elapsed="22.016304">Element with locator 'xpath:(//div[@class="ml-2"])[3]' not found.</status>
+</test>
+<doc>This checks the Member account fubctionality</doc>
+<status status="FAIL" start="2024-06-01T21:31:39.498884" elapsed="22.369511"/>
+</suite>
+<status status="FAIL" start="2024-06-01T21:31:39.460961" elapsed="22.410486"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="test memberAccount">TestCases.test memberAccount</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

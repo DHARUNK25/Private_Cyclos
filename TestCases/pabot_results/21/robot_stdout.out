@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.test cancel recurringPayment :: To validate Banking - payment to ...
+==============================================================================
+To validate payment                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_cancel_recurringPayment.robot:17
+    T:  To validate payment    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_cancel_recurringPayment.robot:23
+      To validate cancel the Recurring payment    user_name=keerthisan    amount_data=10
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\test_cancel_recurringPayment.robot:31
+      verify the Banking page open    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\Resources\PaymentUser.robot:53
+      Wait Until Element Is Visible    ${Banking_title}
+      |  ${Banking_title} = xpath://div[@class="side-menu-header"]//following-sibling::div (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://div[@class="side-menu-header"]//following-sibling::div' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.test cancel recurringPayment :: To validate Banking - pa... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Cyclos_project\PilotProject_Cyclos_Team1-5\TestCases\pabot_results\21\output.xml
